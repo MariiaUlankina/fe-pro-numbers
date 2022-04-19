@@ -7,7 +7,11 @@
  * @param {number} maxSecond
  * @returns {number}
  */
-export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {};
+export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
+    min = Math.min(minFirst,minSecond);
+    max = Math.max(maxFirst,maxSecond);
+    return min*max;
+};
 
 /**
  * Функция принимает один числовой аргумент, это радиус круга. Функция должна
