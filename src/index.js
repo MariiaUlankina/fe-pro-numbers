@@ -20,7 +20,10 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
  * @param {number} radius
  * @returns {number}
  */
-export const getSquareOfCircle = (radius) => {};
+export const getSquareOfCircle = (radius) => {
+    let pi = Math.PI;
+    return pi*Math.pow(radius,2);
+};
 
 /**
  * Функция принимает число и точность к которой нужно округлить
