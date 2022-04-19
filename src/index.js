@@ -41,7 +41,13 @@ export const getFixedValue = (number, accuracy) => {};
  * @param {number} number
  * @returns {number}
  */
-export const getFlooroCeil = (number) => {};
+export const getFlooroCeil = (number) => {
+    let integer = Math.round(number);
+    if (integer %2 == 0){
+        return Math.floor(number);
+    }
+    return Math.ceil(number)
+};
 
 /**
  * Мы передаем два числа, от какого и до какого числа и функция должна
