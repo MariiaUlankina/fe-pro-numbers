@@ -33,7 +33,9 @@ export const getSquareOfCircle = (radius) => {
  * @param {number} accuracy
  * @returns {number}
  */
-export const getFixedValue = (number, accuracy) => {};
+export const getFixedValue = (number, accuracy) => {
+    return Math.round(number*Math.pow(10,accuracy))/Math.pow(10,accuracy);
+};
 
 /**
  * Если целая часть числа четная, то срабатывает Math.floor для этого числа
@@ -57,4 +59,6 @@ export const getFlooroCeil = (number) => {
  * @param {number} to
  * @returns {number}
  */
-export const randomizer = (from, to) => {};
+export const randomizer = (from, to) => {
+
+};
